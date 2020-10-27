@@ -1,0 +1,286 @@
+/* [HEADER + CART ICON] */
+html, body {
+  max-width: auto;
+  font-family: arial, sans-serif;
+  padding: 0;
+  margin: 0 auto;
+}
+#page-header {
+  background: #7A46F1;
+  padding: 0px;
+  position: relative;
+}
+#page-cart-icon {
+  padding: 8px;
+  border-radius: 10px;
+  font-size: 20px;
+  background: #7A46F1;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+/* [PRODUCTS LIST] */
+#page-products {
+  padding: 12px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+.pdt {
+  flex-grow: 1;
+  width: 30%;
+  background: #7A46F1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  box-sizing: border-box;
+}
+@media all and (max-width: 768px) {
+  .pdt { width: 45% }
+}
+.pdt-img {
+  max-width: 100%;
+  object-fit: contain;
+}
+.pdt-name {
+  font-size: 18px;
+  margin: 5px 0;
+}
+.pdt-price {
+  color: #a82828;
+  font-weight: 700;
+}
+.pdt-desc {
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+}
+.pdt-add {
+  width: 100%;
+  background: #cfd3da;
+  font-size: 16px;
+  color: #7A46F1;
+  border: 0;
+  padding: 10px 0;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* [SHOPPING CART] */
+.ninja {
+  display: none !important;
+}
+#page-cart {
+  padding: 10px;
+}
+#cart-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+#cart-table th {
+  text-align: left;
+}
+#cart-table th, #cart-table td {
+  padding: 10px;
+}
+#cart-table tr:nth-child(odd) {
+  background: #7A46F1;
+}
+#cart-table input[type=number] {
+  width: 60px;
+  padding: 5px;
+}
+.cart-remove {
+  background: #d63b3b;
+  color: #7A46F1;
+  border: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* [CHECKOUT FORM] */
+#cart-checkout {
+  margin-top: 10px;
+  max-width: 320px;
+}
+#cart-checkout input {
+  box-sizing: border-box;
+  padding: 5px;
+  margin: 5px;
+  width: 100%;
+}
+#cart-checkout input[type=submit] {
+  background: #cfd3da;
+  color: #7A46F1;
+  border: 0;
+  padding: 10px 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.footer {
+  position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+  padding: 25px;
+  text-align: center;
+  
+  background:  #7A46F1;
+  grid-row-gap: 350px;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.main{
+  width: 100%;
+  height: auto;
+  background-image: url(../Images\icon\5.png);
+  background-repeat: repeat;
+  min-height:50px;
+  margin: 0 auto;
+ 
+}  
+.container{
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+
+}
+.topbar{
+  width: 100%;
+  height: 4px;
+  background-color: #fcc508
+}
+.social_icon{
+  width: 100%;
+  height: 46px;
+  background-color: #7A46F1;
+  float: left;
+}
+.icon{
+  width: 150px;
+  height: 33px;
+  padding-top: 5px;
+  float:left;
+}
+.login_register_btn{
+  background-color: #fcc508;
+  width: 150px;
+  height: 33px;
+  float:left;
+  
+}
+.header_right{
+    width: 300px;
+    height: auto;
+    float: right;
+}
+.login_register_btn a{
+   display: block;
+   float: left;
+   color: white;
+   text-decoration: none;
+   line-height: 33px;
+   width: 50px;
+}
+
+.header{
+   width: 100%;
+   height: 90px;
+   float: left;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+.logo{
+  width:auto;
+  height: 90px;
+  float: left;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #74b9ff; 
+  height: 90px;
+  width: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 32px;
+  color: white;
+  text-align: center;
+  padding: 35px 35px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 32px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 40px 40px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: #74b9ff;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:#a29bfe;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #dfe6e9;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #74b9ff;
+}
+
+.show {
+  display: block;
+}
+
+
+
+
+.mySlides {
+           
+    width: 100%;
+    height: auto;
+    padding: 5%;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+
